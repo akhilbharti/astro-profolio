@@ -56,7 +56,7 @@ const allwork = (await getCollection("work"))
             </Link> 
             and small bootstrapped product companies</p>
         </article>
-        <RainBowBtn href="src/static/Akhil_Bharti_Senior_Frontend_6_YOE.pdf" aria-label="View Full Résumé (opens in a new tab)"/>
+        <RainBowBtn href="/public/Akhil_Bharti_Senior_Frontend_6_YOE.pdf" aria-label="View Full Résumé (opens in a new tab)"/>
       </section>
 
       <section class="animate space-y-6">
@@ -106,23 +106,7 @@ const allwork = (await getCollection("work"))
         </ul>
       </section>
 
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
-          </h5>
-          <Link href="/projects">
-            See all projects
-          </Link>
-        </div>
-        <ul class="flex flex-col gap-4">
-          {projects.map(project => (
-            <li>
-              <ArrowCard entry={project} />
-            </li>
-          ))}
-        </ul>
-      </section>
+
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
